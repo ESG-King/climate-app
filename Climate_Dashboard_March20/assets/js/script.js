@@ -46,7 +46,7 @@ console.log('Please activate dark mode, if you want to use it!');
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 function switchTheme(e) {
-    if (e.target.checked) {
+    if (!e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
     }
