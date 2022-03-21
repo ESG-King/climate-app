@@ -22,6 +22,10 @@ localStorage.setItem('theme', 'dark'); //add this
 if (currentTheme === 'light') {
         toggleSwitch.checked = true;
     }
+else if (currentTheme === 'dark') {
+        toggleSwitch.checked = false;
+    }
+	
 	
 	
 
