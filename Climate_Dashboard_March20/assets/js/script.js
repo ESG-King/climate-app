@@ -7,6 +7,9 @@
  * if you want to change, please create a new javascript,
  * because if one is missing in the original dwadmin javascript it will fall apart
  */
+document.documentElement.setAttribute('data-theme', 'dark');
+localStorage.setItem('theme', 'dark'); //add this
+    
 
 $(document).ready(function () {
 	setInterval(function () {
