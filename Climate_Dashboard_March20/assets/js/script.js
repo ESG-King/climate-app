@@ -15,8 +15,26 @@ $(document).ready(function () {
 		$(".loader").hide();
 		$(".loader-overlay").hide();
 	}, 1000);
+	
 document.documentElement.setAttribute('data-theme', 'dark');
 localStorage.setItem('theme', 'dark'); //add this
+	
+if (currentTheme === 'light') {
+        toggleSwitch.checked = true;
+    }
+	
+	
+
+	
+
+	
+
+	
+
+
+	
+
+
 	$("#sidebar-toggle, .sidebar-overlay").click(function () {
 		$(".sidebar").toggleClass("sidebar-show");
 		$(".sidebar-overlay").toggleClass("d-block");
@@ -65,7 +83,9 @@ if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
 
     if (currentTheme === 'light') {
+
         toggleSwitch.checked = true;
+
     }
 }
 
