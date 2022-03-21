@@ -7,8 +7,7 @@
  * if you want to change, please create a new javascript,
  * because if one is missing in the original dwadmin javascript it will fall apart
  */
-document.documentElement.setAttribute('data-theme', 'dark');
-localStorage.setItem('theme', 'dark'); //add this
+
     
 
 $(document).ready(function () {
@@ -16,7 +15,8 @@ $(document).ready(function () {
 		$(".loader").hide();
 		$(".loader-overlay").hide();
 	}, 1000);
-
+document.documentElement.setAttribute('data-theme', 'dark');
+localStorage.setItem('theme', 'dark'); //add this
 	$("#sidebar-toggle, .sidebar-overlay").click(function () {
 		$(".sidebar").toggleClass("sidebar-show");
 		$(".sidebar-overlay").toggleClass("d-block");
@@ -64,7 +64,7 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
 
-    if (currentTheme === 'dark') {
+    if (currentTheme === 'light') {
         toggleSwitch.checked = true;
     }
 }
