@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Transition Risk - Visualising Climate Change Impact on Your Business</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700,800,900|Heebo:300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+
+        <meta name="description" content="ClimateGraph.io aims to simplify the understanding of climate change by visualising data easily.">
+        <meta name="keywords" lang="de" content="Klimawandel, Daten, Visualisierung, Fridays for Future">
+        <meta name="keywords" lang="en" content="Climate Change, Data, Visualisation, Fridays for Future">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    </head>
+
+    <body>
+        <!-- <img class="hero__bg-img" src="https://viperdev.io/images/background.svg" alt="background"> -->
+        <img class="hero__graphic" src="Physical_transitional.png" alt="building blocks" width="250" height="550">
+        <section id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col m6 s12">
+                        <!-- <a href="#" class="brand-logo"><img width="150px" src="logo_wide.svg" height="auto"></a> -->
+                        <h1>Transition Risk - Visualising Climate Change Impact on Your Business</h1>
+                
+                        <p>
+                            Here you can see how the CO2 emissions are, which are driving climate change. In your country and in the world.
+                        </p>
+                        <p>
+                            You can play with the graphs, compare your country with others and at the end choose the level of climate policy you like and see how it affects emissions and the associated global warming.
+                            You'll also get an idea of which industries cause the most emissions and to which countries they contribute the most.
+                        </p>
+                        <div class="control-row">
+                            <select class="usercountry">
+                                <option selected disabled>Choose Your Country</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="line-charts">
+
+                            <div class="control-row">
+                                <select class="countrydata1">
+                                    <option selected disabled>Compare with another country</option>
+                                </select>
+                            </div>
+                            <!-- <p>Source: <a href="https://data.worldbank.org/indicator/en.atm.co2e.pc" target="_blank">Worldbank</a></p> -->
+                        </div>
+                        <!-- <div class="col m8 s12">
+                            <div id="emissions-per-capita"></div>
+                        </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col m4 s12 right">
+                            <h2 class="title">Step 1: Country-level Emissions & Reduction Committments</h2>
+                            <!-- <p>
+                                Here you can see the total emissions in kt.
+                                You can also compare your country with other countries and the world.
+                                Rule of thumb: the smaller the population, the smaller the emissions.
+                            </p> -->
+                            <div class="control-row">
+                                <select class="countrydata2">
+                                    <option selected disabled>Compare with another country</option>
+                                </select>
+                            </div>
+                            <p>Source: <a href="https://data.worldbank.org/indicator/EN.ATM.CO2E.KT" target="_blank">Worldbank</a></p>
+                        </div>
+                        <div class="col m8 s12">
+                            <div id="emissions-total"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6 left s12">
+                            <h2 class="title">Step 2: Sector-level Emission Reduction Breakdown Estimates</h2>
+                            <p>
+                                Okay, now we know about the emissions, but where do the emissions come from?
+                                This chart shows how emissions (in million tons per year) were distributed across the different industries in 2010.
+                                With a click on the industries you can see which country amounts to how much to this sector.
+                            </p>
+                            <p>Source: <a href="https://ourworldindata.org/grapher/global-carbon-dioxide-emissions-by-sector" target="_blank">Our World in Data</a></p>
+
+                        </div>
+                        <div class="col m6 s12">
+                            <div id="emissions-sector-sunburst"></div>
+                        </div>
+
+                    </div>
+                    <div class="row center">
+                        <h2 class="title">Step 3: Low Carbon Transition Scenarios: Quantifying Policy Risk </h2>
+                        <p>Let's take a look into the future. How will emissions change, based on the climate policies of the coming years? </p>
+                        <p>Decide for yourself what kind of climate policy you think is appropriate and observe how the temperature will have changed in 2100.</p>
+                        <p>
+                            This graph shows you potential future emissions pathways of global carbon dioxide emissions in the case of no climate policies, current implemented policies, national pledges within the Paris Agreement, and 2°C and 1.5°C consistent pathways.
+                            To visualize the range for a given scenario you can see high, median and low pathways.
+                        </p>
+                        <div id="prediction"></div>
+                        <div class="prediction-text-container">
+                            Temperature compliance with 1.5C scenario implies carbon reduction cost of $2.1M YoY.
+                            <span class="chip prediction-scenario"></span>
+                            <!-- <div class="prediction-temperature"></div> -->
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+                <div class="row center">
+                    <h2 class="title">Step 4: Quantifying Carbon Reduction Cost  </h2>
+                    <p>
+                        28,000 Metrics Tons Reduction
+                        GHG Emissions in Metric Tons
+                        amounts 12,000 Metrics Tons
+                        Left by 2040 under 1.5C
+                        Scenario.
+                    </p>
+
+                    <img src="Dash_12.png" alt="background" width="1100" height="630">
+                    
+
+                        
+
+                    <img src="Dash_2.png" alt="background" width="1100" height="580">
+
+                    <p>
+                        Assuming ClimVaRStr = min {max {VaR(Transition Costs | Policy Shock)}}
+                    </p>
+
+                    <img src="Dash_243.png" alt="background" width="1100" height="650">
+
+                    </div>
+
+                </div>
+
+                    <!-- </div>
+                    <div style="float: left;"> </div>
+                        <h2 class="title">Step 3: Low Carbon Transition Scenarios: Quantifying Policy Risk                        </h2>
+                        <p>Let's take a look into the future. How will emissions change, based on the climate policies of the coming years? </p>
+                        <p>Decide for yourself what kind of climate policy you think is appropriate and observe how the temperature will have changed in 2100.</p>
+                        <p>
+                            This graph shows you potential future emissions pathways of global carbon dioxide emissions in the case of no climate policies, current implemented policies, national pledges within the Paris Agreement, and 2°C and 1.5°C consistent pathways.
+                            To visualize the range for a given scenario you can see high, median and low pathways.
+                        </p>
+                        <div id="prediction"></div>
+                        
+                        <div class="prediction-text-container">
+                            Temperature rise in 1.5C scenario implies carbon reduction cost of $2.1M YoY. -->
+                            <!-- <span class="chip prediction-scenario"></span>
+                            <div class="prediction-temperature"></div> -->
+                        <!-- </div>  -->
+                         <!-- <img class="hero__bg-img1" src="Dash_2.png" alt="background"> -->
+
+                         <!-- <div style="float: left;"> </div>
+                         <h2 class="title">Step 4: Quantifying Carbon Reduction Cost   
+
+                        
+                        <img src="Dash_12.png" alt="background" width="1100" height="600">
+
+                        
+
+                        <img src="Dash_2.png" alt="background" width="1100" height="550">
+                    -->
+                        
+
+
+                        
+
+                        
+                        <!-- <p>Source: <a href="https://ourworldindata.org/grapher/future-greenhouse-gas-emission-scenarios?time=1990..2100" target="_blank">Our World in Data</a></p> -->
+                        <!-- <p>
+                            <a href="https://climateactiontracker.org/countries/" target="_blank">
+                                Find out more about climate policies in your country.
+                            </a>
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
