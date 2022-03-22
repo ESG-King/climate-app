@@ -119,7 +119,7 @@ var data = {
 	],
 	datasets: [
 		{
-			label: "TCFD Readiness Insight",
+			label: "Insight Score",
 			fill: true,
 			backgroundColor: [
 				"#bdd9e6",
