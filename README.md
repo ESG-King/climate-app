@@ -1,2 +1,2 @@
-# climate-app
+# app
 random
