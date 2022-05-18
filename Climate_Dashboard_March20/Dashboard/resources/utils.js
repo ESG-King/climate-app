@@ -320,9 +320,9 @@ function renderLinearChartCompanies(container, data, competitorNames) {
 
 function renderBarChartCompanies() {
   cities = {
-    'Climate Oversight A':50,
-    'Climate Oversight B':39,
-    'Climate Strategy A':28,
+    'Board Oversight':50,
+    'Management Role':39,
+    'Strategy Risk':28,
     'Climate Strategy B':25,
     'Climate Strategy C':25,
     'Climate Risk A':60,
