@@ -105,17 +105,17 @@ Chart.defaults.global.defaultFontSize = 11;
 // Data with datasets options
 var data = {
 	labels: [
-		"Climate Oversight\n A",
-		"Climate Oversight\n B",
-		"Climate Strategy\n A",
-		"Climate Strategy B",
-		"Climate Strategy C",
-		"Climate Risk A",
-		"Climate Risk B",
-		"Climate Risk C",
-		"Climate Target A",
-		"Climate Target B",
-		"Climate Target C",
+		"Board Oversight",
+		"Management Role",
+		"Strategy Risk",
+		"Strategy Impact",
+		"Strategy Resilience",
+		"Risk Identification",
+		"Risk Management",
+		"Risk Integration",
+		"Climate Metrics",
+		"GHG Emissions",
+		"Climate Targets",
 	],
 	datasets: [
 		{
@@ -202,17 +202,17 @@ Chart.defaults.global.defaultFontSize = 11;
 // Data with datasets options
 var data = {
 	labels: [
-		"Climate Oversight\n A",
-		"Climate Oversight\n B",
-		"Climate Strategy\n A",
-		"Climate Strategy B",
-		"Climate Strategy C",
-		"Climate Risk A",
-		"Climate Risk B",
-		"Climate Risk C",
-		"Climate Target A",
-		"Climate Target B",
-		"Climate Target C",
+		"Board Oversight",
+		"Management Role",
+		"Strategy Risk",
+		"Strategy Impact",
+		"Strategy Resilience",
+		"Risk Identification",
+		"Risk Management",
+		"Risk Integration",
+		"Climate Metrics",
+		"GHG Emissions",
+		"Climate Targets",
 	],
 	datasets: [
 		{
