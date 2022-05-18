@@ -100,7 +100,7 @@ var ctx = canvas.getContext("2d");
 
 // Global Options:
 Chart.defaults.global.defaultFontColor = "#2097e1";
-Chart.defaults.global.defaultFontSize = 11;
+Chart.defaults.global.defaultFontSize = 10;
 
 // Data with datasets options
 var data = {
@@ -144,7 +144,7 @@ var data = {
 var options = {
 	title: {
 		display: true,
-		text: "TCFD Readiness Insight",
+		text: "Climate Readiness Insight",
 		fontSize: 22,
 		position: "top",
 		fontColor: "white"
@@ -197,7 +197,7 @@ var ctx = canvas.getContext("2d");
 
 // Global Options:
 Chart.defaults.global.defaultFontColor = "#2097e1";
-Chart.defaults.global.defaultFontSize = 11;
+Chart.defaults.global.defaultFontSize = 10;
 
 // Data with datasets options
 var data = {
