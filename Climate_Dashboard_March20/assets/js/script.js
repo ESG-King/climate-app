@@ -261,7 +261,7 @@ var data = {
 var options = {
 	title: {
 		display: true,
-		text: "TCFD Indicator-by-Indicator Comparison",
+		text: "Climate Readiness Benchmark",
 		fontSize: 22,
 		position: "top",
 		fontColor: "white"
