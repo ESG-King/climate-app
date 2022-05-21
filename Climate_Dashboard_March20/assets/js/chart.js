@@ -26,7 +26,7 @@ var myBar = new Chart(ctxBar, {
   data: {
     labels: ["Q1 2021", "Q2 2021", "Q3 2021", "Q4 2021","Q1 2022"],
     datasets: [{
-      label: 'Students',
+      label: 'Climate Change',
       backgroundColor: [ chartColors.grey, chartColors.grey, chartColors.grey, chartColors.grey,chartColors.info],
 
       data: [
