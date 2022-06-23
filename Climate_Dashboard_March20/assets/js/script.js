@@ -176,7 +176,7 @@ var options = {
 		yAxes: [{
 			scaleLabel: {
 				display: true,
-				labelString: 'Market Cap',
+				labelString: '',
 				fontSize: 12
 			},
 
@@ -338,7 +338,7 @@ var options = {
 		yAxes: [{
 			scaleLabel: {
 				display: true,
-				labelString: 'Market Cap',
+				labelString: '',
 				fontSize: 12
 			},
 
@@ -558,7 +558,7 @@ var bubbleChart = new Chart(popCanvas, {
 	},
 	title: {
 		display: true,
-		text: "Climate Targets",
+		text: "Climate Reduction Targets",
 		fontSize: 22,
 		position: "top",
 		fontColor: "white"
