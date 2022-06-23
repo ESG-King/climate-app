@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Blank Page - DWAdmin</title>
+
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+	<!-- Style CSS (White)-->
+	<link rel="stylesheet" href="assets/css/White.css">
+	<!-- Style CSS (Dark)-->
+	<link rel="stylesheet" href="assets/css/Dark.css">
+	<!-- FontAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+	<!-- Icon LineAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/lineawesome/css/line-awesome.min.css">
+
+</head>
+<body>
+  
+  <!--Topbar -->
+  <div class="topbar transition">
+	<div class="bars">
+		<button type="button" class="btn transition" id="sidebar-toggle">
+			<i class="las la-bars"></i>
+		</button>
+	</div>
+	<div class="menu">
+	
+		<ul>
+
+			 <li>
+				<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox"  title="Dark Or White"/>
+							<div class="slider round"></div>
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<a href="notifications.html" class="transition">
+						<i class="las la-bell"></i>
+						<span class="badge badge-danger notif">5</span>
+					</a>
+				</li>
+
+				<li>
+					<div class="dropdown">
+						<div class="dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">
+							<img src="assets/images/avatar/avatar-2.png" alt="Profile">
+						</div>
+						<div class="dropdown-menu" aria-labelledby="dropdownProfile">
+							
+							<a class="dropdown-item" href="profile.html">
+								<i class="las la-user mr-2"></i> My Profile
+							</a>
+	
+							<a class="dropdown-item" href="activity-log.html">
+								<i class="las la-list-alt mr-2"></i> Activity Log
+							</a>
+						 
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="signin.html">
+								<i class="las la-sign-out-alt mr-2"></i> Sign Out
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--Sidebar-->
+	<!--Sidebar-->
+<div class="sidebar transition overlay-scrollbars">
+    <div class="logo">
+        <!-- <h1 style="text-align:center"><span style="font-size:10px;"></span>Climate Insights</h1> -->
+        <h2 style="font-weight: 700;" class="mb-0"><span style="font-weight: 500;">Climate Insights</span></h2>
+        <!-- <span style="white-space: pre-line">@Climate.Insights</span> -->
+
+    </div>
+
+    <div class="sidebar-items">
+        <div class="accordion" id="sidebar-items">
+            <ul>
+
+                <p class="menu">Feed</p>
+
+                <li>
+                    <a href="../index.html" class="items">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span>Climate Peer Insights Feed</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="dash_index.html" class="items">
+
+                        <i class="lar la-meh-blank"></i>
+                        <span>Climate Readiness & Benchmarking</span>
+                    </a>
+                </li>
+
+                <p class="menu">Climate Intelligence</p>
+                <li id="headingOne">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas la-cog"></i>
+                        <span>Risk Analysis</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+
+                <div id="collapseOne" class="collapse submenu" aria-labelledby="headingOne"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="Transition_Risk/index.html">Transition Risk Analysis</a>                        </li>
+
+                        <li>
+                            <a href="Physical_Risk/map.html">Physical Risk Analysis</a>
+                        </li>
+                            
+
+
+<!-- 
+                        <li>
+                            <a href="components-breadcrumb.html">Breadcrumb</a>
+                        </li>
+
+                        <li>
+                            <a href="components-buttons.html">Buttons</a>
+                        </li>
+
+                        <li>
+                            <a href="components-card.html">Card</a>
+                        </li>
+
+                        <li>
+                            <a href="components-copllapse.html">Collapse</a>
+                        </li>
+
+                        <li>
+                            <a href="components-dropdown.html">Dropdown</a>
+                        </li>
+
+                        <li>
+                            <a href="components-form.html">Form</a>
+                        </li>
+
+                        <li>
+                            <a href="components-listgroup.html">List Group</a>
+                        </li>
+
+                        <li>
+                            <a href="components-progress.html">Progress</a>
+                        </li>
+
+                        <li>
+                            <a href="components-table.html">Table</a>
+                        </li>
+
+                        <li>
+                            <a href="components-todolist.html">Todo List</a>
+                        </li>
+
+                        <li>
+                            <a href="components-typography.html">Typography</a>
+                        </li> -->
+
+                    </ul>
+                </div>
+
+
+                <li id="headingTwo">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseTwo"
+                       aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas la-wrench"></i>
+                        <span>GHG Measurement</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapseTwo" class="collapse submenu" aria-labelledby="headingTwo"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="impact/index.html">GHG Estimation Tool</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseThree"
+                       aria-expanded="true" aria-controls="collapseThree">
+                        <i class="fas la-plug"></i>
+                        <span>Additional Modules</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapseThree" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <!-- <li>
+                            <a href="modules-fontawesome.html">Font Awesome</a>
+                        </li> -->
+
+
+                        <li>
+                            <a href="heatmap.html">TCFD Readiness Heatmap</a>
+                        </li>
+
+                        <li>
+                            <a href="modules-chartjs.html">Additional Visualizations</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#forms"
+                       aria-expanded="true" aria-controls="forms">
+                        <i class="fas la-file-alt"></i>
+                        <span>Forms</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="forms" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+                        <li>
+                            <a href="forms-editor.html">Editor</a>
+                        </li>
+                        <li>
+                            <a href="forms-Validation.html">Validation</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <p class="menu">Pages</p>
+
+                <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapsefour"
+                       aria-expanded="true" aria-controls="collapsefour">
+                        <i class="fas la-folder"></i>
+                        <span>Auth</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapsefour" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="signin.html">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="signup.html">Register</a>
+                        </li>
+
+                        <li>
+                            <a href="forgot.html">Forgot Password</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#errros"
+                       aria-expanded="true" aria-controls="errros">
+                        <i class="las la-exclamation-circle"></i>
+                        <span>Errors</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li> -->
+                <!-- <div id="errros" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="errors-405.html">405</a>
+                        </li>
+
+                        <li>
+                            <a href="errors-404.html">404</a>
+                        </li>
+
+                        <li>
+                            <a href="errors-403.html">403</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <li>
+                    <a href="dash_index.html" class="items">
+                        <i class="fas la-pencil-ruler"></i>
+                        <span>Plugins</span>
+                    </a>
+                </li> -->
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+	<div class="sidebar-overlay"></div>
+
+
+<!--Content Start-->
+<div class="content transition">
+	<div class="container-fluid dashboard">
+		<h3>TCFD Implementation Examples</h3>
+	
+		<div class="row">
+	
+			<!--Start copllapse-->
+	
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header">
+							Governance: Best-In-Class Examples from Your Peers
+						</div>
+						<div class="card-body">
+							<!-- <p class='text-muted'>You can use a link with the<code> href </code> attribute, or a button with the <code> data-target</code> attribute. In both cases, the <code>data-toggle="collapse"</code> is required.</p> -->
+							<p class='text'>  a) Describe the board's oversight of climate-related risks and opportunities</p>
+							<p>
+								<a  class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+									Example #1 from your peers
+								</a>
+
+
+								<button class="btn btn-primary Collapse-btn"  type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+									Example #2 from your peers
+								</button>
+
+								<button class="btn btn-primary Collapse-btn"  type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+									Example #3 from your peers
+								</button>
+
+								<button class="btn btn-primary Collapse-btn"  type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+									Example #4 from your peers
+								</button>
+
+							  </p>
+							  <div class="collapse" id="collapseExample">
+								<div class="card card-body">
+									Processes and frequency by which the board and/or board committees (e.g. audit, risk, or other committees) are informed about climate-related issues. 
+									Whether the board and/or board committees consider climate-related issues when reviewing and guiding strategy, major plans of action, risk management policies, annual budgets, and business plans as well as setting the organisation's performance objectives, monitoring implementation and performance, and overseeing major capital expenditures, acquisitions, and divestures.
+									How the board monitors and oversees progress against goals and targets for addressing climate-related issues.
+								</div>
+							  </div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+			 
+				<div class="col-xl-4">
+				   <div class="card">
+					 <div class="card-body">
+					   <h5 class="card-title">Peer Example 1</h5>
+					   <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+					   <p class="card-text">The board delegates certain elements of climate oversight functions to one or more of the five standing committees: Executive, Audit and Finance, Human Resources and Compensation, Directors' Affairs, and Public Policy and Sustainability</p>
+					   <a href="#" class="card-link">View Report</a>
+					   <a href="#" class="card-link">Download Report</a>
+					 </div>
+				   </div>
+			   </div>
+	   
+				<div class="col-xl-4">
+				   <div class="card">
+					 <div class="card-body">
+					   <h5 class="card-title">Peer Example 2</h5>
+					   <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+					   <p class="card-text">The board delegates certain elements of climate oversight functions to one or more of the five standing committees: Executive, Audit and Finance, Human Resources and Compensation, Directors' Affairs, and Public Policy and Sustainability</p>
+					   <a href="#" class="card-link">View Report</a>
+					   <a href="#" class="card-link">Download Report</a>
+					 </div>
+				   </div>
+			   </div>
+	   
+				<div class="col-xl-4">
+				   <div class="card">
+					 <div class="card-body">
+					   <h5 class="card-title">Example 3</h5>
+					   <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+					   <p class="card-text">The board delegates certain elements of climate oversight functions to one or more of the five standing committees: Executive, Audit and Finance, Human Resources and Compensation, Directors' Affairs, and Public Policy and Sustainability</p>
+					   <a href="#" class="card-link">View Report</a>
+					   <a href="#" class="card-link">Download Report</a>
+					 </div>
+				   </div>
+			   </div>
+		   </div>
+
+		   <div class="row">
+
+			<!--Start Todo list-->
+			<div class="col-md-12">
+					<div class="card-hover-shadow-2x mb-3 card">
+						<div class="card-header  font-weight-bold mr-auto">
+							<i class=""></i>&nbsp;Peer Disclosure Examples
+						</div>
+						
+						<div class="scroll-area-sm">
+							<perfect-scrollbar class="ps-show-limits">
+								<div style="position: static;" class="ps ps--active-y">
+									<div class="ps-content">
+										<ul class=" list-group list-group-flush">
+											<li class="list-group-item">
+												<!-- <div class="todo-indicator bg-warning"></div> -->
+												<div class="widget-content p-0">
+													<div class="widget-content-wrapper">
+														<div class="widget-content-left mr-2">
+															<div class="custom-checkbox custom-control"> <input class="custom-control-input" id="exampleCustomCheckbox12" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox12">&nbsp;</label> </div>
+														</div>
+														<div class="widget-content-left">
+															<div class="widget-heading">S&P Global <div class="badge badge-danger ml-2">Core Peer</div>
+															</div>
+															<div class="widget-subheading"><i>Financials</i></div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<div class="todo-indicator bg-focus"></div>
+												<div class="widget-content p-0">
+													<div class="widget-content-wrapper">
+														<div class="widget-content-left mr-2">
+															<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox1" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox1">&nbsp;</label></div>
+														</div>
+														<div class="widget-content-left">
+															<div class="widget-heading">Moody's</div>
+															<div class="widget-subheading">
+																<div>Financials<div class="badge badge-pill badge-info ml-2">Financials</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<!-- <div class="todo-indicator bg-primary"></div> -->
+												<div class="widget-content p-0">
+													<div class="widget-content-wrapper">
+														<div class="widget-content-left mr-2">
+															<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox4" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox4">&nbsp;</label></div>
+														</div>
+														<div class="widget-content-left flex2">
+															<div class="widget-heading">MSCI </div>
+															<div class="widget-subheading">Financials</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<!-- <div class="todo-indicator bg-info"></div> -->
+												<div class="widget-content p-0">
+													<div class="widget-content-wrapper">
+														<div class="widget-content-left mr-2">
+															<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox2" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox2">&nbsp;</label></div>
+														</div>
+														<div class="widget-content-left">
+															<div class="widget-heading">London Stock Exchange</div>
+															<div class="widget-subheading">Financials</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<!-- <div class="todo-indicator bg-success"></div> -->
+												<div class="widget-content p-0">
+													<div class="widget-content-wrapper">
+														<div class="widget-content-left mr-2">
+															<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox3" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox3">&nbsp;</label></div>
+														</div>
+														<div class="widget-content-left flex2">
+															<div class="widget-heading">Intercontinental Exchange</div>
+															<div class="widget-subheading">Financials</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<!-- <div class="todo-indicator bg-success"></div> -->
+												<div class="widget-content p-0">
+													<div class="widget-content-wrapper">
+														<div class="widget-content-left mr-2">
+															<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox10" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox10">&nbsp;</label></div>
+														</div>
+														<div class="widget-content-left flex2">
+															<div class="widget-heading">Euronext</div>
+															<div class="widget-subheading">Financials</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</perfect-scrollbar>
+						</div>
+						<div class="d-block text-right card-footer"><button class="mr-2 btn btn-link btn-sm">Cancel</button><button class="btn btn-primary">Add Example</button></div>
+					</div>
+				</div>
+			</div> 
+
+        </div>
+    </div>
+    
+	<!-- Footer -->
+	<div class="footer transition">
+		<hr>
+		<p>
+			&copy; 2020 All Right Reserved by <a href="#" target="_blank">DWAdmin</a>
+		</p>
+	</div>
+
+	<!-- Loader -->
+	<div class="loader">
+		<div class="spinner-border text-light" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	
+	<div class="loader-overlay"></div>
+
+	<!-- Library Javascipt-->
+	<script src="assets/vendors/bootstrap/js/jquery.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+	<script src="assets/js/script.js"></script>
+ </body>
+</html>
