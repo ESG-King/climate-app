@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6858343273703359"
+            crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    </br>
+    <title>Dashboard</title>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="Climate_Dashboard_March20/assets/vendors/bootstrap/css/bootstrap.css">
+    <!-- Style CSS (White)-->
+    <link rel="stylesheet" href="Climate_Dashboard_March20/assets/css/White.css">
+    <!-- Style CSS (Dark)-->
+    <link rel="stylesheet" href="Climate_Dashboard_March20/assets/css/Dark.css">
+    <link rel="stylesheet" href="Climate_Dashboard_March20/assets/css/jquery.formstyler.css">
+    <link rel="stylesheet" href="Climate_Dashboard_March20/assets/css/jquery.formstyler.theme.css">
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" href="Climate_Dashboard_March20/assets/vendors/fontawesome/css/all.css">
+    <!-- Icon LineAwesome CSS-->
+    <link rel="stylesheet" href="Climate_Dashboard_March20/assets/vendors/lineawesome/css/line-awesome.min.css">
+
+</head>
+<body>
+
+
+<!--Topbar -->
+<div class="topbar transition">
+    <div class="bars">
+        <button type="button" class="btn transition" id="sidebar-toggle">
+            <i class="las la-bars"></i>
+        </button>
+    </div>
+    <div class="menu">
+        <ul>
+
+            <li>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" title="Dark"/>
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </li>
+
+            <li>
+                <a href="Climate_Dashboard_March20/notifications.html" class="transition">
+                    <i class="las la-bell"></i>
+                    <span class="badge badge-danger notif">5</span>
+                </a>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <div class="dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">
+                        <img src="Climate_Dashboard_March20/assets/images/avatar/avatar-2.png" alt="Profile">
+                        <!-- <img src="Climate_Dashboard_March20/assets/images/avatar/avatar-5.jpeg" alt="Profile"> -->
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownProfile">
+
+                        <a class="dropdown-item" href="Climate_Dashboard_March20/profile.html">
+                            <i class="las la-user mr-2"></i> My Profile
+                        </a>
+
+                        <a class="dropdown-item" href="Climate_Dashboard_March20/activity-log.html">
+                            <i class="las la-list-alt mr-2"></i> Activity Log
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Climate_Dashboard_March20/signin.html">
+                            <i class="las la-sign-out-alt mr-2"></i> Sign Out
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Sidebar-->
+<div class="sidebar transition overlay-scrollbars">
+    <div class="logo">
+        <h2 style="font-weight: 700;" class="mb-0"><span style="font-weight: 500;">Climate Insights</span></h2>
+    </div>
+
+    <div class="sidebar-items">
+        <div class="accordion" id="sidebar-items">
+            <ul>
+
+                <p class="menu">Feed</p>
+
+                <li>
+                    <a href="index.html" class="items">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span>Climate Peer Insights Feed</span>
+                    </a>
+                </li>
+
+
+                </li>
+
+                <li>
+                    <a href="Climate_Dashboard_March20/dash_index.html" class="items">
+
+                        <i class="lar la-meh-blank"></i>
+                        <span>Climate Readiness & Benchmarking</span>
+                    </a>
+
+
+                    <p class="menu">Climate Intelligence</p>
+
+                <li id="headingOne">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas la-cog"></i>
+                        <span>Risk Analysis</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+
+                <div id="collapseOne" class="collapse submenu" aria-labelledby="headingOne"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="index-new.html">Qualitative Risk Analysis</a>                        </li>
+
+                        <li>
+
+                        <!-- <li>
+                            <a href="Climate_Dashboard_March20/Transition_Risk/index.html">Quantitative Risk Analysis</a>
+                        </li> -->
+                        <!--
+                                                <li>
+                                                    <a href="components-breadcrumb.html">Breadcrumb</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-buttons.html">Buttons</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-card.html">Card</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-copllapse.html">Collapse</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-dropdown.html">Dropdown</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-form.html">Form</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-listgroup.html">List Group</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-progress.html">Progress</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-table.html">Table</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-todolist.html">Todo List</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="components-typography.html">Typography</a>
+                                                </li> -->
+
+                    </ul>
+                </div>
+
+
+                <li id="headingTwo">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseTwo"
+                       aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas la-wrench"></i>
+                        <span>GHG Measurement</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapseTwo" class="collapse submenu" aria-labelledby="headingTwo"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="Climate_Dashboard_March20/impact/index.html">GHG Estimation Tool</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseThree"
+                       aria-expanded="true" aria-controls="collapseThree">
+                        <i class="fas la-plug"></i>
+                        <span>Additional Modules</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapseThree" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <!-- <li>
+                            <a href="modules-fontawesome.html">Font Awesome</a>
+                        </li> -->
+
+                        <li>
+                            <a href="Climate_Dashboard_March20/heatmap.html">TCFD Readiness Heatmap</a>
+                        </li>
+
+                        <li>
+                            <a href="Climate_Dashboard_March20/modules-chartjs.html">Additional Visualizations</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#forms"
+                       aria-expanded="true" aria-controls="forms">
+                        <i class="fas la-file-alt"></i>
+                        <span>Forms</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="forms" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="forms-editor.html">Editor</a>
+                        </li>
+
+
+                        <li>
+                            <a href="forms-Validation.html">Validation</a>
+                        </li>
+
+
+                    </ul>
+                </div> -->
+
+                <p class="menu">Pages</p>
+
+                <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapsefour"
+                       aria-expanded="true" aria-controls="collapsefour">
+                        <i class="fas la-folder"></i>
+                        <span>Auth</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapsefour" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="Climate_Dashboard_March20/signin.html">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="Climate_Dashboard_March20/signup.html">Register</a>
+                        </li>
+
+                        <li>
+                            <a href="Climate_Dashboard_March20/forgot.html">Forgot Password</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#errros"
+                       aria-expanded="true" aria-controls="errros">
+                        <i class="las la-exclamation-circle"></i>
+                        <span>Errors</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li> -->
+                <!-- <div id="errros" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="errors-405.html">405</a>
+                        </li>
+
+                        <li>
+                            <a href="errors-404.html">404</a>
+                        </li>
+
+                        <li>
+                            <a href="errors-403.html">403</a>
+                        </li>
+
+                    </ul>
+                </div> -->
+
+                <!-- <li>
+                    <a href="Plugins.html" class="items">
+                        <i class="fas la-pencil-ruler"></i>
+                        <span>Plugins</span>
+                    </a>
+                </li> -->
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar-overlay"></div>
+
+
+<!--Content Start-->
+<div class="content transition">
+    <div class="container-fluid">
+        <div class="materiality__main">
+            <div class="materiality__flex">
+                <div class="materiality__text">
+                    <h1>TCFD Implementation Tool</h1>
+                    <p>
+                        This is sample text. This is sample text. This is sample text. This is sample text.
+                        This is sample text. This is sample text. This is sample text. This is sample text. 
+                        This is sample text. This is sample text. This is sample text. This is sample text. 
+                        This is sample text. This is sample text. This is sample text. This is sample text.
+                    </p>
+                    <p>
+                        The TCFD Implementation guide contains all guidance necessary
+                        for use of the standards. <a href="https://assets.bbhub.io/company/sites/60/2021/07/2021-TCFD-Implementing_Guidance.pdf">To access the TCFD standards, click here.</a>
+                    </p>
+                    <!-- <span>
+                        マテリアリティマップの日本語版をご覧になるには、<a href="#">ここをクリックしてください</a>
+                        To see a version of the Materiality Map in Japanese, please <a href="#">click here</a>.
+                    </span> -->
+                </div>
+                <div class="materiality__sector">
+                    <h2>Sector Level Map</h2>
+                    <ul>
+                        <li>
+                            <span></span>
+                            Material Issue is likely to be material for more than 50% of industries in sector
+                        </li>
+                        <li>
+                            <span></span>
+                            Issue is likely to be material for fewer than 50% of industries in sector
+                        </li>
+                        <li>
+                            <span></span>
+                            Issue is not likely to be material for any of the industries in sector
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="materiality__table style-all-block">
+                <!-- <div class="materi-left__name">
+                    <div class="materi-box">
+                        Transition Risks
+                    </div>
+                    <div class="materi-box">
+                        Physical Risks
+                    </div>
+                    <div class="materi-box">
+                        Financial Impact
+                    </div>
+                    <div class="materi-box">
+                        Near-term RCP8.5
+                    </div>
+                </div> -->
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Risk Category</th>
+                        <th>Near-term RCP8.5</th>
+                        <th>Medium-Term RCP8.5</th>
+                        <th>Long-Term RCP8.5</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Transition – Technology</td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Transition – Regulations</td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                    </tr>
+                    <tr>
+                        <td>Transition – Market Share</td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Transition –Customers</td>
+                        <td></td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                    </tr>
+                    <tr>
+                        <td>Transition –Reputation</td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                    </tr>
+                    <tr>
+                        <td>Transition –Innovation</td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                    </tr>
+                    <tr>
+                        <td>Physical – Heat Waves</td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Physical – Wildfires</td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Physical – Floods</td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Physical – Sourcing</td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                    </tr>
+                    <tr>
+                        <td>Physical – Supply Interruptions</td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Physical – Production Interruptions</td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                    </tr>
+                    <tr>
+                        <td>Physical – Insurance Costs</td>
+                        <td data-val="modal" class="open_modal fon__silver"></td>
+                        <td></td>
+                        <td data-val="modal" class="open_modal fon__black"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer transition">
+    <hr>
+    <p>
+        &copy; 2022 All Right Reserved by <a href="#" target="_blank">Nasdaq</a>
+    </p>
+</div>
+
+<!-- Loader -->
+<div class="loader">
+    <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<div class="loader-overlay"></div>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-registration">
+            <div class="close"></div>
+            <h2>Best-in-Class Example</h2>
+            <p>
+                The tool is intended to help users to conduct all the necessary analysis for the qualitative TCFD disclosures. 
+                It is not a GHG accounting or TCFD reporting tool. 
+
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Library Javascipt-->
+<script src="Climate_Dashboard_March20/assets/vendors/bootstrap/js/jquery.min.js"></script>
+<script src="Climate_Dashboard_March20/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="Climate_Dashboard_March20/assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="Climate_Dashboard_March20/assets/js/jquery.formstyler.min.js"></script>
+
+<script src="Climate_Dashboard_March20/assets/vendors/charts/chart.min.js"></script>
+<script src="Climate_Dashboard_March20/assets/js/chart.js"></script>
+<script src="Climate_Dashboard_March20/Physical_Risk/js/site.js"></script>
+<script src="Climate_Dashboard_March20/Physical_Risk/js/mapbox-sdk.min.js"></script>
+<script src="Climate_Dashboard_March20/Physical_Risk/js/utilities.js"></script>
+<script src="Climate_Dashboard_March20/Physical_Risk/js/plugins.js"></script>
+<script src="Climate_Dashboard_March20/Physical_Risk/js/main.js"></script>
+
+<script src="Climate_Dashboard_March20/assets/js/script.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('select').styler();
+    })
+</script>
+</body>
+</html>
