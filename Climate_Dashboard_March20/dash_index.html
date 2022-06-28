@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6858343273703359"
+            crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Dashboard - ESG Advisory</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+    <!-- Style CSS (White)-->
+    <link rel="stylesheet" href="assets/css/White.css">
+    <!-- Style CSS (Dark)-->
+    <link rel="stylesheet" href="assets/css/Dark.css">
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+    <!-- Icon LineAwesome CSS-->
+    <link rel="stylesheet" href="assets/vendors/lineawesome/css/line-awesome.min.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6858343273703359"
+    crossorigin="anonymous"></script>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</br>
+<title>Dashboard</title>
+<script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+
+
+<!-- Bootstrap CSS-->
+<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+<!-- Style CSS (White)-->
+<link rel="stylesheet" href="assets/css/White.css">
+<!-- Style CSS (Dark)-->
+<link rel="stylesheet" href="assets/css/Dark.css">
+<link rel="stylesheet" href="assets/css/jquery.formstyler.css">
+<link rel="stylesheet" href="assets/css/jquery.formstyler.theme.css">
+<!-- FontAwesome CSS-->
+<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+<!-- Icon LineAwesome CSS-->
+<link rel="stylesheet" href="assets/vendors/lineawesome/css/line-awesome.min.css">
+
+
+
+
+</head>
+<body>
+    
+
+<!--Topbar -->
+<div class="topbar transition">
+    <div class="bars">
+        <button type="button" class="btn transition" id="sidebar-toggle">
+            <i class="las la-bars"></i>
+        </button>
+    </div>
+    <div class="menu">
+        <ul>
+
+            <li>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" title="Dark Or White"/>
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </li>
+
+            <li>
+                <a href="notifications.html" class="transition">
+                    <i class="las la-bell"></i>
+                    <span class="badge badge-danger notif">5</span>
+                </a>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <div class="dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">
+                        <img src="assets/images/avatar/avatar-2.png" alt="Profile">
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownProfile">
+
+                        <a class="dropdown-item" href="profile.html">
+                            <i class="las la-user mr-2"></i> My Profile
+                        </a>
+
+                        <a class="dropdown-item" href="activity-log.html">
+                            <i class="las la-list-alt mr-2"></i> Activity Log
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="signin.html">
+                            <i class="las la-sign-out-alt mr-2"></i> Sign Out
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Sidebar-->
+<div class="sidebar transition overlay-scrollbars">
+    <div class="logo">
+        <!-- <h1 style="text-align:center"><span style="font-size:10px;"></span>Climate Insights</h1> -->
+        <h2 style="font-weight: 700;" class="mb-0"><span style="font-weight: 500;">Climate Insights</span></h2>
+        <!-- <span style="white-space: pre-line">@Climate.Insights</span> -->
+
+    </div>
+
+    <div class="sidebar-items">
+        <div class="accordion" id="sidebar-items">
+            <ul>
+
+                <p class="menu">Feed</p>
+
+                <li>
+                    <a href="../index.html" class="items">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span>Climate Peer Insights Feed</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="dash_index.html" class="items">
+
+                        <i class="lar la-meh-blank"></i>
+                        <span>Climate Readiness & Benchmarking</span>
+                    </a>
+                </li>
+
+                <p class="menu">Climate Intelligence</p>
+                <li id="headingOne">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas la-cog"></i>
+                        <span>Risk Analysis</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+
+                <div id="collapseOne" class="collapse submenu" aria-labelledby="headingOne"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="../index-new.html">Qualitative Risk Analysis</a>                        </li>
+
+                        <!-- <li>
+                            <a href="Transition_Risk/index.html">Quantitative Risk Analysis</a>
+                        </li> -->
+                            
+                        <!-- <li>
+                            <a href="index-new.html">Qualitative Transition Risk</a>                        </li>
+
+                        <li> -->
+
+<!-- 
+                        <li>
+                            <a href="components-breadcrumb.html">Breadcrumb</a>
+                        </li>
+
+                        <li>
+                            <a href="components-buttons.html">Buttons</a>
+                        </li>
+
+                        <li>
+                            <a href="components-card.html">Card</a>
+                        </li>
+
+                        <li>
+                            <a href="components-copllapse.html">Collapse</a>
+                        </li>
+
+                        <li>
+                            <a href="components-dropdown.html">Dropdown</a>
+                        </li>
+
+                        <li>
+                            <a href="components-form.html">Form</a>
+                        </li>
+
+                        <li>
+                            <a href="components-listgroup.html">List Group</a>
+                        </li>
+
+                        <li>
+                            <a href="components-progress.html">Progress</a>
+                        </li>
+
+                        <li>
+                            <a href="components-table.html">Table</a>
+                        </li>
+
+                        <li>
+                            <a href="components-todolist.html">Todo List</a>
+                        </li>
+
+                        <li>
+                            <a href="components-typography.html">Typography</a>
+                        </li> -->
+
+                    </ul>
+                </div>
+
+
+                <li id="headingTwo">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseTwo"
+                       aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas la-wrench"></i>
+                        <span>GHG Measurement</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapseTwo" class="collapse submenu" aria-labelledby="headingTwo"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="impact/index.html">GHG Estimation Tool</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapseThree"
+                       aria-expanded="true" aria-controls="collapseThree">
+                        <i class="fas la-plug"></i>
+                        <span>Additional Modules</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapseThree" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <!-- <li>
+                            <a href="modules-fontawesome.html">Font Awesome</a>
+                        </li> -->
+
+
+                        <li>
+                            <a href="heatmap.html">TCFD Readiness Heatmap</a>
+                        </li>
+
+                        <li>
+                            <a href="modules-chartjs.html">Additional Visualizations</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#forms"
+                       aria-expanded="true" aria-controls="forms">
+                        <i class="fas la-file-alt"></i>
+                        <span>Forms</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="forms" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+                        <li>
+                            <a href="forms-editor.html">Editor</a>
+                        </li>
+                        <li>
+                            <a href="forms-Validation.html">Validation</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <p class="menu">Pages</p>
+
+                <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#collapsefour"
+                       aria-expanded="true" aria-controls="collapsefour">
+                        <i class="fas la-folder"></i>
+                        <span>Auth</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li>
+                <div id="collapsefour" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="signin.html">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="signup.html">Register</a>
+                        </li>
+
+                        <li>
+                            <a href="forgot.html">Forgot Password</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <li id="headingThree">
+                    <a href="onclick();" class="submenu-items" data-toggle="collapse" data-target="#errros"
+                       aria-expanded="true" aria-controls="errros">
+                        <i class="las la-exclamation-circle"></i>
+                        <span>Errors</span>
+                        <i class="fas la-angle-right"></i>
+                    </a>
+                </li> -->
+                <!-- <div id="errros" class="collapse submenu" aria-labelledby="headingThree"
+                     data-parent="#sidebar-items">
+                    <ul>
+
+                        <li>
+                            <a href="errors-405.html">405</a>
+                        </li>
+
+                        <li>
+                            <a href="errors-404.html">404</a>
+                        </li>
+
+                        <li>
+                            <a href="errors-403.html">403</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <li>
+                    <a href="dash_index.html" class="items">
+                        <i class="fas la-pencil-ruler"></i>
+                        <span>Plugins</span>
+                    </a>
+                </li> -->
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar-overlay"></div>
+<!--Content Start-->
+<div class="content transition">
+    <div class="container-fluid">
+        <div class="climate-dash-title">
+            <h3>Nasdaq Inc.</h3>
+            <!-- <p>Financials : Security & Commodity Exchanges</p> -->
+            <a href="Best-In-Class.html" class="card-link">Financials : Security & Commodity Exchanges</a>
+        </div>
+        <div class="climate-dash-flex">
+            <div class="climate-dash-box">
+                <span>Climate Disclosure Readiness</span>
+                <div class="climate-dash-numb">
+                    <strong>Mature</strong>
+                    <!-- <p>/100</p> -->
+                </div>
+            </div>
+            <div class="climate-dash-box">
+                <span>Industry Percentile</span>
+                <div class="climate-dash-numb">
+<!--                     <span>79th</span> -->
+                 <strong>79th</strong>
+                </div>
+            </div>
+            <div class="climate-dash-box">
+                <span>GHG Emissions</span>
+                <div class="climate-dash-numb">
+                    <strong>YES</strong>
+<!--                     <p>MT CO2e</p> -->
+                </div>
+            </div>
+            <div class="climate-dash-box">
+                <span>Climate Targets</span>
+                <div class="climate-dash-numb">
+                    <strong>x% by 2040</strong>
+<!--                     <p>/100</p> -->
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+    
+
+    
+    <div class="container-fluid">
+        <div class="recommend-main">
+            <div class="style-all-block">
+                <div class="recommend-info">
+                    <div class="recommend-sc">
+                        <div class="recommend-tit">
+                            <span>Climate Disclosure Recommendations</span>
+                            <div class="recommend-data">
+                                <span>2020</span>
+                                <span>2021</span>
+                                <!-- <span>2019</span> -->
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Board Oversight</strong>
+                            <div class="recommend-name">
+                                <span>Describe the board’s oversight of climate related risks and opportunities</span>
+                                <div class="recommend-data">
+                                    <span>Average</span>
+                                    <!-- <span href="www.google.com" class="card-link">Average</span> -->
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Management Role</strong>
+                            <div class="recommend-name">
+                                <span>Describe management’s role in assessing and managing climate-related risks and opportunities</span>
+                                <div class="recommend-data">
+                                    <span>Average</span>
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Strategy Risk</strong>
+                            <div class="recommend-name">
+                                <span>Describe the climate related risks and opportunities the organization has identified</span>
+                                <div class="recommend-data">
+                                    <span>Average</span>
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Strategy Impact</strong>
+                            <div class="recommend-name">
+                                <span>Describe the impact of climate-related risks and opportunities on financial planning</span>
+                                <div class="recommend-data">
+                                    <span>Average</span>
+                                    <span>Average</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Strategy Resilience</strong>
+                            <div class="recommend-name">
+                                <span>Describe the resilience of the organization’s strategy, considering climate-related scenarios</span>
+                                <div class="recommend-data">
+                                    <span>Starting</span>
+                                    <span>Starting</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Risk Identification</strong>
+                            <div class="recommend-name">
+                                <span>Describe the organization’s processes for identifying and assessing climate-related risks</span>
+                                <div class="recommend-data">
+                                    <span>Mature</span>
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Risk Management</strong>
+                            <div class="recommend-name">
+                                <span>Describe the organization’s processes for managing climate-related risks</span>
+                                <div class="recommend-data">
+                                    <span>Mature</span>
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Risk Integration</strong>
+                            <div class="recommend-name">
+                                <span>Describe how processes for identifying climate-related risks are integrated into overall risk management</span>
+                                <div class="recommend-data">
+                                    <span>Starting</span>
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>Climate Metrics</strong>
+                            <div class="recommend-name">
+                                <span>Disclose the metrics used by the organization to assess climate-related risks and opportunities</span>
+                                <div class="recommend-data">
+                                    <span>Starting</span>
+                                    <span>Average</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-cnt">
+                            <strong>GHG Emissions</strong>
+                            <div class="recommend-name">
+                                <span>Disclose Scope 1, Scope 2, and, if appropriate, Scope 3 greenhouse gas(GHG) emissions, and the related risks</span>
+                                <div class="recommend-data">
+                                    <span>Starting</span>
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recommend-cnt">
+                            <strong>Climate Targets</strong>
+                            <div class="recommend-name">
+                                <span>Describe the targets used by the organization to manage climate related risks and opportunities</span>
+                                <div class="recommend-data">
+                                    <span>Average</span>
+                                    <span>Mature</span>
+                                    <!-- <span>21/12/2020</span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="style-all-block">
+            <div class="liner-chart-sc">
+                <div class="from-liner-chart">
+                    <div class="liner-chart">
+                        <canvas id="popChart1"></canvas>
+                    </div>
+                    <div class="liner-chart-data">
+                        <strong>Climate Disclosure Summary</strong>
+                        <div class="chart-data">
+                            <div class="chart-data-info">
+                                <span>The Climate Disclosure Matrix below shows that the Company is classified as Average with the leading climate-focused guidance frameworks, while the leaders in Company's peer group are Peer 1, Peer 2, Peer 3 In the following sections, Company’s disclosure deep dives are provided against each key climate pillar to help understand the positive and negative drivers as well as strengths and opportunities of company’s climate-related disclosure.</span>
+                                <ul>
+<!--                                     <li><a>The Climate Disclosure Matrix below shows that AMH is classified as Average with the leading climate-focused guidance frameworks, while the leaders in AMH’s peer group are AVB, JLL, and EQR. In the following slides, AMH’s disclosure deep dives are provided against each key climate pillar to help understand the positive and negative drivers as well as strengths and opportunities of company’s climate-related disclosure. </a></li> -->
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+       
+
+
+<!-- 
+        <div class="diagram-rem style-all-block">
+            <div class="diagram-sc1">
+                <canvas id="popChart1" width="90" height="40"></canvas>
+            </div>
+        </div> -->
+
+        <div class="diagram-rem style-all-block">
+            <div class="diagram-sc">
+                <canvas id="boxChart"></canvas>
+            </div>
+        </div>
+        <div class="diagram-rem style-all-block">
+            <div class="diagram-sc">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+
+        
+
+        
+        <div class="style-all-block">
+            <div class="liner-chart-sc">
+                <div class="from-liner-chart">
+                    <div class="liner-chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="liner-chart-data">
+                        <strong>News Source Data</strong>
+                        <div class="chart-data">
+                            <div class="chart-data-info">
+                                <span>03/20/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/this-growth-stock-near-its-1-year-low-has-93-upside-according-to-wall-street">This Growth Stock Near Its 1-Year Low Has 93% Upside, According to Wall Street</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">Stocks To Watch This Week? 4 Cyclical Stocks For Your List</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/19/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/18/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/17/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            <div class="chart-data-info">
+                                <span>03/16/22</span>
+                                <ul>
+                                    <li><a href="https://www.nasdaq.com/articles/what-will-7-hikes-do-to-stocks">What Will 7 Hikes Do to Stocks?</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/stocks-to-watch-this-week-4-cyclical-stocks-for-your-list">2 REITs You'll Want to Own During a Market Correction</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/4-reasons-to-buy-jfrog-and-1-reason-to-sell">4 Reasons to Buy JFrog and 1 Reason to Sell</a></li>
+                                    <li><a href="https://www.nasdaq.com/articles/meme-stock-gamestop-racks-up-a-big-loss-again">Meme Stock GameStop Racks Up a Big Loss Again</a></li>
+                                </ul>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        <!-- <canvas id="bubble-chart" width="800" height="800"></canvas> -->
+
+    <!-- </div> -->
+    <div class="diagram-rem style-all-block">
+        <div class="diagram-sc">
+            <canvas id="popChart" width="300" height="130"></canvas>
+        </div>
+    </div>
+    <div class="recommend-main">
+        <div class="style-all-block">
+            <div class="recommend-info">
+                <div class="recommend-sc">
+                    <div class="recommend-tit">
+                        <strong>Target dashboard</strong>
+                        <div class="recommend-data">
+                            <span>Sector</span>
+                            <span>Net zero</span>
+                            <span>Target Summary</span>
+                            <span>Target Description</span>
+                            
+                        </div>
+                    </div>
+                    <div class="recommend-cnt">
+                        <!-- <strong>S&P Global</strong> -->
+                        <div class="recommend-bottom">
+                            <span>S&P Global</span>
+                            <div class="recommend-data">
+                                <span>Professional & Commercial Services </span>
+                                <span>Committed</span>
+                                <span>1.5°C by 2025</span>
+                                <span>S&P Global commits to reduce absolute scope 1 and 2 GHG emissions 25% by 2025</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend-cnt">
+                        <!-- <strong>Climate Oversight B</strong> -->
+                        <div class="recommend-bottom">
+                            <span>London Stock Exchange Group</span>
+                            <div class="recommend-data">
+                                <span>Security & Commodity Exchanges</span>
+                                <span>Committed</span>
+                                <span>1.5°C by 2030</span>
+                                <span>London Stock Exchange Group plc commits to reduce absolute scope 1 and 2 GHG emissions 50% by 2030</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend-cnt">
+                        <!-- <strong>Climate Strategy A</strong> -->
+                        <div class="recommend-bottom">
+                            <span>Moody's Corporation</span>
+                            <div class="recommend-data">
+                                <span>Professional & Commercial Services</span>
+                                <span>Committed</span>
+                                <span>1.5°C by 2030</span>
+                                <span>Moody's Corporation commits to reduce absolute scope 1 and scope 2 GHG emissions 50% by 2030</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend-cnt">
+                        <!-- <strong>Climate Strategy B</strong> -->
+                        <div class="recommend-bottom">
+                            <span>MSCI Inc.</span>
+                            <div class="recommend-data">
+                                <span>Professional & Commercial Services</span>
+                                <span>Committed</span>
+                                <span>Net Zero by 2040</span>
+                                <span>MSCI had previously pledged to reduce by 2035 the company’s Scope 1 and 2 emissions by 50%, and
+                                Scope 3 emissions by 20%. With the commitment to transition to net-zero prior to 2040</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="diagram-rem style-all-block">
+        <div class="diagram-sc">
+            <canvas id="bubble-chart" width="800" height="800"></canvas>
+        </div>
+    </div> -->
+
+</div>
+
+
+
+<!-- Loader -->
+<div class="loader">
+    <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<div class="loader-overlay"></div>
+
+<!-- Library Javascipt-->
+<script src="assets/vendors/bootstrap/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<!-- Chart Js-->
+<script src="assets/vendors/charts/chart.min.js"></script>
+<script src="assets/js/chart.js"></script>
+
+<!-- Footer -->
+<div class="footer transition">
+    <hr>
+    <p>
+        &copy; 2022 All Right Reserved by <a href="#" target="_blank">Nasdaq</a>
+    </p>
+</div>
+
+<!-- Loader -->
+<div class="loader">
+    <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<div class="loader-overlay"></div>
+
+
+<!-- Library Javascipt-->
+<script src="assets/vendors/bootstrap/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script src="assets/vendors/bootstrap/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/js/jquery.formstyler.min.js"></script>
+
+<script src="assets/vendors/charts/chart.min.js"></script>
+<script src="assets/js/chart.js"></script>
+<script src="Physical_Risk/js/site.js"></script>
+<script src="Physical_Risk/js/mapbox-sdk.min.js"></script>
+<script src="Physical_Risk/js/utilities.js"></script>
+<script src="Physical_Risk/js/plugins.js"></script>
+<script src="Physical_Risk/js/main.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
